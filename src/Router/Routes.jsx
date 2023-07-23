@@ -9,6 +9,9 @@ import Errorpage from "../Components/Errorpages/Errorpage";
 import College from "../Components/CoolegeRoutes/College";
 import Admission from "../Components/AdmissionForm/Admission";
 import Colleges from "../PopularCard/Colleges";
+import CollegeDetails from "../PopularCard/CollegeDetails";
+import UserProfile from "../Components/UserProfile.jsx/UserProfile";
+import MyCollege from "../Components/MyCollege/MyCollege";
 
   const router=createBrowserRouter([
     {
@@ -26,6 +29,12 @@ import Colleges from "../PopularCard/Colleges";
               element:<College></College>
             },
             {
+              path: "college/:id",
+              element: <CollegeDetails></CollegeDetails>,
+              loader: ({ params }) =>
+                fetch(`http://localhost:5173/college/${params.id}`),
+            },
+            {
               path:'admission',
               element:<Admission></Admission>
             },
@@ -40,6 +49,14 @@ import Colleges from "../PopularCard/Colleges";
             {
                 path:"login",
                 element:<Login></Login>
+            },
+            {
+              path:'profile',
+              element:<UserProfile></UserProfile>
+            },
+            {
+              path:'myCollege',
+              element:<MyCollege></MyCollege>
             }
            
             

@@ -4,9 +4,9 @@ const Footer = () => {
   return (
     <div>
       <footer className="bg-gradient-to-r from-gray-500 to-indigo-300">
-        <div className="container mx-auto py-8 px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-white">
+        <div className=" py-4 px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div className="text-white ml-10">
               <img
                 src="https://img.freepik.com/free-photo/medium-shot-man-portrait-with-graduation-cap_23-2150293685.jpg?size=626&ext=jpg&ga=GA1.1.1676688474.1687690117&semt=ais"
                 alt="Website Logo"
@@ -16,13 +16,13 @@ const Footer = () => {
               University admission or college admission is the process through which students enter tertiary education at universities and colleges. Systems vary widely from country to country, and sometimes from institution to institution.
               </p>
             </div>
-            <div className="text-white">
+            <div className="text-white ml-10">
               <h1 className="text-2xl font-bold mb-4">Contact</h1>
               <p>123 Street, City, Country</p>
               <p>Email: info@example.com</p>
               <p>Phone: +123 456 7890</p>
             </div>
-            <div className="text-white">
+            <div className="text-white ml-10">
               <h1 className="text-2xl font-bold mb-4">Services</h1>
               <ul>
                 <li>Event Organization</li>
@@ -31,7 +31,7 @@ const Footer = () => {
                 <li>Science Club</li>
               </ul>
             </div>
-            <div className="text-white">
+            <div className="text-white ml-10">
               <h1 className="text-2xl font-bold mb-4">Follow Us</h1>
               <div className="flex space-x-4">
                 <a href="#" className="text-white hover:text-gray-300">
@@ -101,7 +101,7 @@ const Footer = () => {
             </form>
           </div>
         </div>
-        <div className="bg-purple-600 py-4">
+        <div className="bg-gray-500 py-4">
           <div className="container mx-auto text-center">
             <p className="text-white">
               &copy; 2023 Admission College. All rights reserved.

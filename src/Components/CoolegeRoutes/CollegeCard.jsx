@@ -11,7 +11,7 @@ const CollegeCard = ({ college }) => {
       <div className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1">
         <div className="relative">
           <img
-            src={college.image}
+            src={college.college_image}
             alt={college.name}
             className="w-full h-40 object-cover rounded-t-lg"
           />
@@ -20,9 +20,9 @@ const CollegeCard = ({ college }) => {
           </span>
         </div>
         <h2 className="text-xl font-bold mt-4 mb-2">{college.name}</h2>
-        <div className="flex justify-between items-center mb-4">
-          <p>Admission Date: {college.admissionDate}</p>
-          <p>Research: {college.researchCount}</p>
+        <div className=" gap-2 items-center mb-4">
+          <p className="font-semibold"><span><h2 className="font-bold text-xl">Admission</h2></span>{college.admission_dates.fall}</p>
+          <p className=""><span><h2 className="font-bold text-xl">Research</h2></span> {college.research_works}</p>
         </div>
         <button
           onClick={toggleDetails}

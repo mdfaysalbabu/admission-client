@@ -37,7 +37,7 @@ const Register = () => {
                 photoUrl: data.photoURL,
               };
               console.log(saveUser);
-              fetch("https://sports-academy-server-pi.vercel.app/users", {
+              fetch("http://localhost:5000/users", {
                 method: "POST",
                 headers: {
                   "content-type": "application/json",
